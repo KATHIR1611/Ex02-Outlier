@@ -14,10 +14,10 @@ You are given bhp.csv which contains property prices in the city of banglore, In
 
     (ii) Using IQR, detect height outliers and print them
     
-#Explanation :
+# Explanation :
 An Outlier is an observation in a given dataset that lies far from the rest of the observations. That means an outlier is vastly larger or smaller than the remaining values in the set. An outlier is an observation of a data point that lies an abnormal distance from other values in a given population. (odd man out).Outliers badly affect mean and standard deviation of the dataset. These may statistically give erroneous results.Most machine learning algorithms do not work well in the presence of outlier. So it is desirable to detect and remove outliers.Outliers are highly useful in anomaly detection like fraud detection where the fraud transactions are very different from normal transactions.
 
-#Algorithm:
+# Algorithm:
 
 STEP 1
 Read the given Data.
@@ -35,7 +35,8 @@ STEP 5
 Plot the datas using Box Plot.
  
  
-#Program:
+# Program:
+Developed by:Kathirvelan.K
 ```
 # 1
 import pandas as ps
@@ -91,6 +92,13 @@ df4 =df3[((df3['height']>=l1)&(df3['height']<=u1))]
 df4.shape
 sns.boxplot(x='height',data=df4)
 ```
+# Output:
+
+Data for bhp.csv
+
+![image](https://user-images.githubusercontent.com/128135186/230089239-3f2644ce-9784-42f2-8101-fb0355e2613d.png)
+
+
 
 
 
