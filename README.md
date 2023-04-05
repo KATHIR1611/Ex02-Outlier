@@ -19,6 +19,7 @@ An Outlier is an observation in a given dataset that lies far from the rest of t
  
  
 Program:
+```
 # 1
 import pandas as ps
 import numpy as np
@@ -72,3 +73,8 @@ l1=q1-1.5*IQR
 df4 =df3[((df3['height']>=l1)&(df3['height']<=u1))]
 df4.shape
 sns.boxplot(x='height',data=df4)
+```
+
+
+
+
